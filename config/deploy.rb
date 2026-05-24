@@ -1,7 +1,7 @@
 lock "~> 3.20"
 
 set :application, "cdp_aws_deploy"
-set :repo_url, "https://Owens345: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@github.com/Owens345/aws-deploy-bog.git"
+set :repo_url, "https://github.com/Owens345/aws-deploy-bog.git"
 set :branch,      :master
 
 set :deploy_to,   "/var/www/cdp_aws_deploy"

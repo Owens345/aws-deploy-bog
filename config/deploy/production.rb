@@ -59,7 +59,7 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-server "16.171.20.125",
+server "16.171.172.210",
   user: "ubuntu",
   roles: %w[app db web],
   ssh_options: {

@@ -1,5 +1,5 @@
 lock "~> 3.20"
-
+set :default_env, { 'NODE_OPTIONS' => '--openssl-legacy-provider' }
 set :application, "cdp_aws_deploy"
 set :repo_url, "https://github.com/Owens345/aws-deploy-bog.git"
 set :branch,      :master

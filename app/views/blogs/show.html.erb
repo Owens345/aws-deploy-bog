@@ -12,7 +12,9 @@
 
 <p>
   <strong>Thumbnail:</strong>
-  <%= image_tag @blog.thumbnail.variant(resize_to_limit: [800, 800]) %>
+  <% if @blog.thumbnail.attached? %>
+    <%= image_tag @blog.thumbnail.variant(resize_to_limit: [800, 800]) %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |

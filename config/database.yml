@@ -79,7 +79,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: blog_app_production
-  username: blog_app
-  password: <%= ENV['BLOG_APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  database: cdp_aws_deploy_production
+  username: deploy
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
